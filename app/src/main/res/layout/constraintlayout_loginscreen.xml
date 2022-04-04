@@ -7,89 +7,85 @@
     tools:context=".MainActivity">
 
    <TextView
-       android:id="@+id/loginTitle"
+       android:id="@+id/login_title"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
        android:text="로그인"
        android:textSize="25sp"
-       android:textStyle="bold"
-        />
-
+       android:textStyle="bold" />
    <EditText
-       android:id="@+id/loginId"
+       android:id="@+id/login_id"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:background="@drawable/text_line"
        android:text="아이디"
-       app:layout_constraintTop_toBottomOf="@id/loginTitle"
+       app:layout_constraintTop_toBottomOf="@id/login_title"
        app:layout_constraintBottom_toBottomOf="parent"
-       android:textSize="25sp"
-       />
+       android:textSize="25sp" />
    <EditText
-       android:id="@+id/loginPassword"
+       android:id="@+id/login_password"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/loginId"
+       app:layout_constraintTop_toBottomOf="@id/login_id"
        android:background="@drawable/text_line"
        android:text="비밀번호"
        android:textSize="25sp" />
    <Button
-       android:id="@+id/loginPress"
+       android:id="@+id/login_press"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/loginPassword"
+       app:layout_constraintTop_toBottomOf="@id/login_password"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
        android:text="로그인" />
    <ImageButton
-       android:id="@+id/iconGoogle"
+       android:id="@+id/icon_google"
        android:layout_width="40dp"
        android:layout_height="40dp"
        android:src="@drawable/ic_logo_google"
        app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="@id/iconKakao"
-       app:layout_constraintTop_toBottomOf="@id/loginPress"
-       android:scaleType="fitCenter"></ImageButton>
+       app:layout_constraintRight_toRightOf="@id/icon_kakao"
+       app:layout_constraintTop_toBottomOf="@id/login_press"
+       android:scaleType="fitCenter"/>
    <ImageButton
-       android:id="@+id/iconNaver"
+       android:id="@+id/icon_naver"
        android:layout_width="40dp"
        android:layout_height="40dp"
        android:src="@drawable/ic_logo_naver"
-       app:layout_constraintTop_toBottomOf="@id/loginPress"
+       app:layout_constraintTop_toBottomOf="@id/login_press"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
-       android:scaleType="fitCenter"></ImageButton>
+       android:scaleType="fitCenter"/>
    <ImageButton
-       android:id="@+id/iconKakao"
+       android:id="@+id/icon_kakao"
        android:layout_width="40dp"
        android:layout_height="40dp"
-       app:layout_constraintTop_toBottomOf="@id/loginPress"
-
+       app:layout_constraintTop_toBottomOf="@id/login_press"
        android:src="@drawable/ic_logo_kakao"
-       app:layout_constraintLeft_toLeftOf="@id/iconGoogle"
+       app:layout_constraintLeft_toLeftOf="@id/icon_google"
        app:layout_constraintRight_toRightOf="parent"
-       android:scaleType="fitCenter"></ImageButton>
+       android:scaleType="fitCenter"/>
    <Button
-       android:id="@+id/signUp"
+       android:id="@+id/sign_up"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:backgroundTint="#00000000"
        android:textColor="@color/black"
-       app:layout_constraintTop_toBottomOf="@id/iconGoogle"
+       app:layout_constraintTop_toBottomOf="@id/icon_google"
        app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintRight_toRightOf="@id/findPassword"
-       android:text="회원가입"></Button>
+       app:layout_constraintRight_toRightOf="@id/find_password"
+       android:text="회원가입"/>
    <Button
-       android:id="@+id/findPassword"
+       android:id="@+id/find_password"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:backgroundTint="#00000000"
        android:textColor="@color/black"
-       app:layout_constraintTop_toBottomOf="@id/iconKakao"
-       app:layout_constraintLeft_toLeftOf="@id/signUp"
+       app:layout_constraintTop_toBottomOf="@id/icon_kakao"
+       app:layout_constraintLeft_toLeftOf="@id/sign_up"
        app:layout_constraintRight_toRightOf="parent"
-       android:text="비밀번호 찾기"></Button>
+       android:text="비밀번호 찾기"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
