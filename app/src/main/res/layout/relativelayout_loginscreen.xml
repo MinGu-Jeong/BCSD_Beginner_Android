@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="로그인"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/text_line"
+            android:text="아이디"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginId"
+            android:background="@drawable/text_line"
+            android:text="비밀번호"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/loginPress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginPassword"
+            android:layout_centerHorizontal="true"
+            android:text="로그인" />
+        <ImageButton
+            android:id="@+id/iconGoogle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginPress"
+            android:layout_toLeftOf="@id/iconNaver"
+            android:src="@drawable/ic_logo_google"
+            android:scaleType="fitCenter"></ImageButton>
+        <ImageButton
+            android:id="@+id/iconNaver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginPress"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logo_naver"
+            android:scaleType="fitCenter"></ImageButton>
+        <ImageButton
+            android:id="@+id/iconKakao"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loginPress"
+            android:layout_toRightOf="@id/iconNaver"
+            android:src="@drawable/ic_logo_kakao"
+            android:scaleType="fitCenter"></ImageButton>
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iconGoogle"
+            android:textColor="@color/black"
+            android:text="회원가입"></Button>
+        <Button
+            android:id="@+id/findPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:layout_below="@id/iconKakao"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/signUp"
+            android:text="비밀번호 찾기"></Button>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
